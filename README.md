@@ -1,5 +1,13 @@
 # Retrosynthesis Workshop Materials
 
+**TODO**
+
+* [ ] Adjust notebooks so they can run in GitHub Codespaces without needing any changes
+         - change config paths to relative and test
+         - add instructions for how to git clone lillymol and rdcanon, then install
+         - add a note that the 0.5 CPU multiplier can be removed
+
+## About
 
 V.F. Scalfani, The University of Alabama
 
@@ -10,28 +18,40 @@ Fall 2024
 > [!NOTE]
 > If you find these materials useful for teaching or research, please let me know by either opening an issue or sending me a note: vfscalfani@ua.edu. This helps prioritize my efforts. Contributions and bug reports are appreciated.
 
-**TODO**
+## How to Run the Notebooks
 
-* [ ] Create versions of notebooks that run on Google Colab and/or GitHub Codespaces
+All Jupyter notebooks were developed locally on Linux Ubuntu 22.04 LTS. We think they should also work on Mac OS, but not on Windows as the multiprocessing code would be different on Windows. We recommend running the notebooks locally using Linux or Windows Subsystem for Linux. 
 
-0. Workshop Series Introduction [*Day 1*]
-1. Python Programming [*Day 1*]
-2. RDKit and Cheminformatics Part 1 [*Day 2*]
+Alternatively, if you have a GitHub account, [GitHub Codespaces](https://docs.github.com/en/codespaces), an online computational environment, is another option to run these retrosynthesis tutorials. Please note that you may need to adjust your [Codespaces billing](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces) settings and monitor useage to avoid unwanted charges. There are some free compute hours for each user; more resources are available for a fee.
+
+Our initial testing on Codespaces suggests that you will need to use at least a 4 core machine for the AiZynthFinder and Similarity-based retrosynthesis workshops. To run the notebooks in Codespaces:
+
+1. On the repository 'https://github.com/ualibweb/retrosynthesis', click `code`, then click `codespaces` and `create codespace on main`
+2. Then, install the needed extensions: Press `Ctrl+Shift+x` or click the extensions button on the left and install the `Python` and `Jupyter` extensions made by Microsoft
+3. [we are still working on this part] Next, follow the instructions within each notebook to setup the development environment using conda and pip.
+
+## Planned Workshops
+
+0. [Workshop Series Introduction](https://github.com/ualibweb/retrosynthesis/blob/main/00_Introduction/workshop_intro.ipynb) [*Day 1*]
+1. [Python Programming](https://github.com/ualibweb/retrosynthesis/blob/main/01_Python/python_intro.ipynb) [*Day 1*]
+2. [RDKit and Cheminformatics Part 1](https://github.com/ualibweb/retrosynthesis/blob/main/02-03_RDKit_Cheminformatics/rdkit_intro_part_one.ipynb) [*Day 2*]
     - SMILES file format
     - Reading and working with molecules
     - Molecule depiction
     - Canonicalization, identifiers, and hashes
     - Chemical similarity and fingerprints
     - Substructure search
-3. RDKit and Cheminformatics Part 2 [*Day 3*]
+3. [RDKit and Cheminformatics Part 2](https://github.com/ualibweb/retrosynthesis/blob/main/02-03_RDKit_Cheminformatics/rdkit_intro_part_two.ipynb) [*Day 3*]
     - Descriptors
     - Reading and working with reactions
     - Reaction depiction
     - Reaction Transformations
     - Molecule and reaction standardization
-4. AiZynthFinder Retrosynthesis [*Day 4*]
-5. Retorosynthesis based on Similarity Ranking [*Day 5*]
-6. Lillymol Retrosynthesis [*Day 6*]
+4. [AiZynthFinder Retrosynthesis](https://github.com/ualibweb/retrosynthesis/blob/main/04_AiZynthFinder/aizynthfinder_rxn_prediction.ipynb) [*Day 4*]
+5. [Retorosynthesis based on Similarity Ranking](https://github.com/ualibweb/retrosynthesis/blob/main/05_Similarity_Based/similarity_based_rxn_prediction.ipynb) [*Day 5*]
+6. [Lillymol Retrosynthesis](https://github.com/ualibweb/retrosynthesis/blob/main/06_LillyMol/lillymol_rxn_prediction.ipynb) [*Day 6*]
+
+## Notes
 
 > [!CAUTION]
 > Retrosynthesis Workshop and Materials Disclaimer
@@ -53,11 +73,3 @@ In summary, please respect intellectual property laws and understand that the pr
 [2] White, M. J. Chemical Patents. In Chemical Information for Chemists: A Primer; The Royal Society of Chemistry, 2013. https://doi.org/10.1039/9781782620655-00053.
 
 
-## Steps to run in codespaces
-
-1. On the repository 'https://github.com/ualibweb/retrosynthesis', click `code`, then click `codespaces` and `Create codespace on main`
-2. Install Extensions: Press `Ctrl+Shift+x` or click the extensions button on the left and install the `Python` and `Jupyter` extensions made by microsoft
-
-> [!NOTE]
-> For the AIZynthFinder and Similarity-Based workshop, we will use 4 core machines on codespaces.
-> Click More Options on the codespace, then click `change machine type`
