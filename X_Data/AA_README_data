@@ -1,0 +1,21 @@
+# Source of Data Files:
+
+1. rxns_10.rsmi, rxns_10k.rsmi, rxns_100k.rsmi
+
+These datasets are random samples from the 1976_Sep2016_USPTOgrants_smiles.rsmi dataset: https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873
+
+2. chembl12_25K.pairs.txt.gz
+
+https://github.com/greglandrum/rdkit_blog/blob/master/data/chembl16_25K.pairs.txt.gz
+
+3. zinc.leads.500.q.smi
+
+https://github.com/greglandrum/rdkit_blog/blob/master/data/zinc.leads.500.q.smi
+
+4. Schneider_JCIM_2016_56_2336_dataSetB.csv
+
+https://pubs.acs.org/doi/10.1021/acs.jcim.6b00564
+
+5. Thesis_compounds_ESI.csv
+
+https://doi.org/10.1039/C6SC00264A 
