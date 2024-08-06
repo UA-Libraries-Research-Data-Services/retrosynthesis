@@ -3,8 +3,11 @@
 **TODO**
 
 * [ ] Adjust notebooks so they can run in GitHub Codespaces without needing any changes
+
          - change config paths to relative and test
+
          - add instructions for how to git clone lillymol and rdcanon, then install
+         
          - add a note that the 0.5 CPU multiplier can be removed
 
 ## About
