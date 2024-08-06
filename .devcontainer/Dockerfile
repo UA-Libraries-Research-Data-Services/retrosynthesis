@@ -1,6 +1,11 @@
 # Use an official miniconda image as a base
 FROM mcr.microsoft.com/vscode/devcontainers/miniconda:latest
 
+# Update the base Conda environment and pip
+RUN conda update -n base -c defaults conda -y && \
+    conda install pip=23.0.1 -y && \
+    pip install --upgrade pip==23.0.1
+
 # Update and install dependencies for LillyMol
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -11,23 +16,20 @@ RUN apt-get update && apt-get install -y \
     wget \
     unzip
 
-# Update the base Conda environment and pip
-RUN conda update -n base -c defaults conda -y && \
-    conda install pip -y && \
-    pip install --upgrade pip
-
 # Create the 'myenv' environment and install packages
 RUN conda create --name myenv -y && \
     conda run -n myenv conda install -c conda-forge rdkit jupyterlab numpy matplotlib pandas networkx -y
 
 # Create the 'aizynth1-env' environment and install packages
 RUN conda create --name aizynth1-env -y && \
-    conda run -n aizynth1-env conda install -c conda-forge "python>=3.8,<3.10" pip -y && \
+    conda run -n aizynth1-env conda install -c conda-forge "python>=3.8,<3.10" pip=23.0.1 -y && \
+    conda run -n aizynth1-env pip install --upgrade pip==23.0.1 && \
     conda run -n aizynth1-env pip install aizynthfinder[all]
 
 # Create the 'retro-sim-env' environment and install packages
 RUN conda create --name retro-sim-env -y && \
-    conda run -n retro-sim-env conda install -c conda-forge rdkit pip -y && \
+    conda run -n retro-sim-env conda install -c conda-forge rdkit pip=23.0.1 -y && \
+    conda run -n retro-sim-env pip install --upgrade pip==23.0.1 && \
     conda run -n retro-sim-env pip install rdchiral && \
     git clone https://github.com/coleygroup/rdcanon.git && \
     cd rdcanon && conda run -n retro-sim-env pip install -e . && \
