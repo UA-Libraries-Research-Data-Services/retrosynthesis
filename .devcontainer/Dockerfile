@@ -1,11 +1,6 @@
 # Use an official miniconda image as a base
 FROM mcr.microsoft.com/vscode/devcontainers/miniconda:latest
 
-# Update the base Conda environment and pip
-RUN conda update -n base -c defaults conda -y && \
-    conda install pip=23.0.1 -y && \
-    pip install --upgrade pip==23.0.1
-
 # Update and install dependencies for LillyMol
 RUN apt-get update && apt-get install -y \
     build-essential \
