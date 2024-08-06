@@ -53,3 +53,9 @@ In summary, please respect intellectual property laws and understand that the pr
 [2] White, M. J. Chemical Patents. In Chemical Information for Chemists: A Primer; The Royal Society of Chemistry, 2013. https://doi.org/10.1039/9781782620655-00053.
 
 
+## Steps to run in codespaces
+
+1. On the repository 'https://github.com/ualibweb/retrosynthesis', click `code`, then click `codespaces` and `Create codespace on main`
+2. Install Extensions: Press `Ctrl+Shift+x` or click the extensions button on the left and install the `Python` and `Jupyter` extensions made by microsoft
+3. Create Conda Environment: Press `Ctrl+Shift+P` and type `>Python:Create Environment`. Then click the first option, then `Conda`, then `Python 3.11`
+4. Install Basic Packages: Open a new terminal with 'Ctrl+Shift+`' and type 'conda install -c conda-forge rdkit jupyterlab numpy matplotlib pandas networkx'
