@@ -1,0 +1,15 @@
+{
+  "name": "Custom Conda Development Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter"
+  ],
+  "settings": {
+    "python.pythonPath": "/opt/conda/envs/myenv/bin/python"
+  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "remoteUser": "vscode"
+}
