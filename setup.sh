@@ -31,8 +31,10 @@ conda create --name aizynth1-env -y
 conda run -n aizynth1-env conda install -c conda-forge "python>=3.8,<3.10" pip=24.0 -y
 conda run -n aizynth1-env pip install aizynthfinder[all]
 echo $"Downloading public data for AizynthFinder\n"
+cd 04_AiZynthFinder
 mkdir -p aizynth_data
 conda run -n aizynth1-env download_public_data aizynth_data
+cd ..
 
 # Create the 'retro-sim-env' environment and install packages
 echo $"Creating the 'retro-sim-env' environment and installing packages\n"
