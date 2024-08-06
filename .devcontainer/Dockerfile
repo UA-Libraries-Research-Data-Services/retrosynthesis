@@ -20,12 +20,16 @@ RUN conda create --name myenv -y && \
     conda run -n retro-sim-env pip install rdchiral && \
     git clone https://github.com/coleygroup/rdcanon.git && \
     cd rdcanon && conda run -n retro-sim-env pip install -e . && \
-    unzip /workspaces/your-repo-root/X_Data/Schneider_JCIM_2016_56_2336_dataSetB.zip -d /workspaces/your-repo-root/X_Data/ && \
+    unzip /workspaces/ualibweb/retrosynthesis/X_Data/Schneider_JCIM_2016_56_2336_dataSetB.zip -d /workspaces/ualibweb/retrosynthesis/X_Data/ && \
     conda create --name lillymol-env -y && \
     conda run -n lillymol-env conda install -c conda-forge rdkit matplotlib jupyterlab -y && \
     git clone https://github.com/vfscalfani/LillyMol_6_cmake.git && \
     cd LillyMol_6_cmake/src && mkdir build && cd build && \
     cmake .. && make -j 4
+
+# Create aizynth_data directory and download public data
+RUN mkdir /workspaces/ualibweb/retrosynthesis/aizynth_data && \
+    download_public_data /workspaces/ualibweb/retrosynthesis/aizynth_data
 
 # Ensure the myenv environment is activated by default
 RUN echo "conda activate myenv" >> ~/.bashrc
