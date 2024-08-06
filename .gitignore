@@ -1,0 +1,14 @@
+*.pyc
+.ipynb_checkpoints
+config*
+rxn_dict.txt
+rxn_list.txt
+Thesis_compounds_ESI.csv
+Thesis_compounds_ESI_mod.csv
+curation_log*
+04_AiZynthFinder/aizynth_data
+Schneider_JCIM_2016_56_2336_dataSetB.csv
+06_LillyMol/_*
+06_LillyMol/temp/_*
+X_Flyer/_build
+rxns_100k.rsmi
