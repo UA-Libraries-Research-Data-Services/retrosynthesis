@@ -6,9 +6,9 @@ Computer Assisted Retrosynthesis Workshop Schedule
 | **Vincent F. Scalfani**
 | *Chemistry and Informatics Librarian*
 | vfscalfani@ua.edu
-| `www.lib.ua.edu`_
+| `lib.ua.edu`_
 
-.. _www.lib.ua.edu: https://www.lib.ua.edu/#/home
+.. _lib.ua.edu: https://www.lib.ua.edu/#/home
 
 .. figure:: imgs/retro_rxn.png
    :scale: 70%
@@ -17,16 +17,16 @@ Computer Assisted Retrosynthesis Workshop Schedule
 Overview
 ============
 
-UA Libraries will be hosting a workshop series on free/open-source computer assisted retrosynthesis workflows. These workshops will use python programming
+UA Libraries will be hosting a workshop series on open-source computer assisted retrosynthesis workflows. These workshops will use python programming
 and cheminformatics techniques for predicting retrosynthesis. Why attend?
 
 - Enhance your chemical synthesis literature searching skills
 - Learn how to use the cheminformatics toolkit, RDKit, for working with digital molecules and reactions
-- Work through several open source retrosynthesis workflows, including software and methods by scientists at **MIT, AstraZeneca, and Eli Lilly**
+- Work through several open-source retrosynthesis workflows, including software and methods published by scientists at **MIT, AstraZeneca, and Eli Lilly**
 
 .. note::
 
-   **Registration Link:** https://ua.libcal.com/
+   **Registration Links:** Registration is required -- morning sessions: `ua.libcal.com/calendar/instruction/morning_retro`_ ; afternoon sessions: `ua.libcal.com/calendar/instruction/afternoon_retro`_
 
    **Location**: Rodgers Library Scholars' Station.
 
@@ -39,6 +39,8 @@ and cheminformatics techniques for predicting retrosynthesis. Why attend?
    **Reusue and sharing:** Code presented during the workshops is available here: `github.com/ualibweb/retrosynthesis`_
 
    .. _github.com/ualibweb/retrosynthesis: https://github.com/ualibweb/retrosynthesis
+   .. _ua.libcal.com/calendar/instruction/morning_retro: https://ua.libcal.com/calendar/instruction/morning_retro
+   .. _ua.libcal.com/calendar/instruction/afternoon_retro: https://ua.libcal.com/calendar/instruction/afternoon_retro
 
 .. list-table::
    :widths: 10 20 40 60
