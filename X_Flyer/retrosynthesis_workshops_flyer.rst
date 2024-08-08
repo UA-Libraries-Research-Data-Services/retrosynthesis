@@ -30,7 +30,7 @@ and cheminformatics techniques for predicting retrosynthesis. Why attend?
 
    **Time and Duration**: All workshops will be offered twice on the date scheduled in order to accommodate schedules (see below). The morning session will start at **10:00 AM** and the afternoon session will start at **3:30 PM**; expected durations are about 1 hour.
 
-   **Technology**: We recommend bringing your own laptop; if you are using Windows, we recommend installing Windows Subsystem for Linux.
+   **Technology**: Computers will be available for use, but we recommend bringing your own laptop so we can help you set up your development environment. The code is designed for Linux and Mac. If you are using Windows, we suggest installing Windows Subsystem for Linux. A GitHub account is also recommended.
 
    **Additional Information:** Prior programming experience is beneficial but not necessary. You will still learn how to get started, even if you don't fully understand all the code during the workshops.
 
