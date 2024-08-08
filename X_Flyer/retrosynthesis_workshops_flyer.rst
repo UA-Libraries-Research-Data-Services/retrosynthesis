@@ -20,7 +20,7 @@ and cheminformatics techniques for predicting retrosynthesis. Why attend?
 
 - Enhance your chemical synthesis literature searching skills
 - Learn how to use the cheminformatics toolkit, RDKit, for working with digital molecules and reactions
-- Work through several open source retrosynthesis workflows, including software and methods published by scientists at **MIT, AstraZeneca, and Eli Lilly**
+- Explore various open source retrosynthesis workflows, featuring software and methods published by researchers at **AstraZeneca**, **MIT**, and **Eli Lilly**. These workflows have been adapted from the original reported methods for our workshops.
 
 .. note::
 
