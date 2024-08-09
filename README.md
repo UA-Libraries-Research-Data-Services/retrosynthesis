@@ -2,13 +2,7 @@
 
 **TODO**
 
-* [ ] Adjust notebooks so they can run in GitHub Codespaces without needing any changes
-
-         - change config paths to relative and test
-
-         - add instructions for how to git clone lillymol and rdcanon, then install
-         
-         - add a note that the 0.5 CPU multiplier can be removed
+* [ ] Test the setup.sh script and all notebooks on Codespaces.
 
 ## About
 
@@ -29,9 +23,9 @@ Alternatively, if you have a GitHub account, [GitHub Codespaces](https://docs.gi
 
 Our initial testing on Codespaces suggests that you will need to use at least a 4 core machine for the AiZynthFinder and Similarity-based retrosynthesis workshops. To run the notebooks in Codespaces:
 
-1. On the repository 'https://github.com/ualibweb/retrosynthesis', click `code`, then click `codespaces` and `create codespace on main`
-2. Then, install the needed extensions: Press `Ctrl+Shift+x` or click the extensions button on the left and install the `Python` and `Jupyter` extensions made by Microsoft
-3. [we are still working on this part] Next, follow the instructions within each notebook to setup the development environment using conda and pip.
+1. On the repository main page, click `code`, then click `codespaces` and `create codespace on main`
+2. Then, install the needed extensions: Press `Ctrl+Shift+x` or click the extensions button on the left and install the `Python` and `Jupyter` extensions made by Microsoft.
+3. [**not tested yet...**] Run the setup.sh script to setup the development environments within your Codespaces.
 
 ## Planned Workshops
 
