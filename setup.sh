@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update and install dependencies
-echo $"Updating and installing dependencies for LillyMol\n"
+echo $"Updating and installing dependencies\n"
 echo $"\n\n\n"
 sudo apt-get update
 sudo apt-get install -y \
@@ -11,6 +11,7 @@ sudo apt-get install -y \
     cmake \
     libeigen3-dev \
     wget \
+    jq \
     unzip
 
 # Unzip the datasets used in the tutorials
