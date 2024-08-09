@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Update and install dependencies for LillyMol
+# Update and install dependencies
 echo $"Updating and installing dependencies for LillyMol\n"
 echo $"\n\n\n"
 sudo apt-get update
@@ -13,27 +13,29 @@ sudo apt-get install -y \
     wget \
     unzip
 
-# Unzip the data for the retrosynthesis project
+# Unzip the datasets used in the tutorials
 echo $"Unzipping retrosynthesis data\n"
 echo $"\n\n\n"
+unzip X_Data/rxns_100k.zip -d X_Data/
+unzip X_Data/Thesis_compounds_ESI.zip -d X_Data/
 unzip X_Data/Schneider_JCIM_2016_56_2336_dataSetB.zip -d X_Data/
 
-# Create the 'myenv' environment and install packages
-echo $"Creating the 'myenv' environment and installing packages\n"
+# Create the 'retro_rdkit_env' environment and install packages
+echo $"Creating the 'retro_rdkit_env' environment and installing packages\n"
 echo $"\n\n\n"
-conda create --name myenv -y
-conda run -n myenv conda install -c conda-forge rdkit jupyterlab numpy matplotlib pandas networkx -y
+conda create --name retro_rdkit_env -y
+conda run -n retro_rdkit_env conda install -c conda-forge rdkit jupyterlab numpy matplotlib pandas -y
 
-# Create the 'aizynth1-env' environment and install packages
-echo $"Creating the 'aizynth1-env' environment and installing packages\n"
+# Create the 'retro_aizynth_env' environment and install packages
+echo $"Creating the 'retro_aizynth_env' environment and installing packages\n"
 echo $"\n\n\n"
-conda create --name aizynth1-env -y
-conda run -n aizynth1-env conda install -c conda-forge "python>=3.8,<3.10" pip=24.0 -y
-conda run -n aizynth1-env pip install aizynthfinder[all]
+conda create --name retro_aizynth_env -y
+conda run -n retro_aizynth_env conda install -c conda-forge "python>=3.8,<3.10" pip=24.0 -y
+conda run -n retro_aizynth_env pip install aizynthfinder[all]
 echo $"Downloading public data for AizynthFinder\n"
 cd 04_AiZynthFinder
 mkdir -p aizynth_data
-conda run -n aizynth1-env download_public_data aizynth_data
+conda run -n retro_aizynth_env download_public_data aizynth_data
 cd ..
 
 # Create the 'retro-sim-env' environment and install packages
@@ -47,14 +49,8 @@ cd rdcanon
 conda run -n retro-sim-env pip install -e .
 cd ..
 
-# Create the 'lillymol-env' environment and install packages
-echo $"Creating the 'lillymol-env' environment and installing packages\n"
-echo $"\n\n\n"
-conda create --name lillymol-env -y
-conda run -n lillymol-env conda install -c conda-forge rdkit matplotlib jupyterlab -y
-
 # Clone and build the LillyMol project
-echo $"Cloning and building the LillyMol project\n"
+echo $"Cloning and building the LillyMol cmake project\n"
 echo $"\n\n\n"
 git clone https://github.com/vfscalfani/LillyMol_6_cmake.git
 cd LillyMol_6_cmake/src
