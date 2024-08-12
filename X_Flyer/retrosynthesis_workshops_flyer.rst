@@ -1,4 +1,10 @@
-Computer-assisted Retrosynthesis Workshop Schedule
+
+.. figure:: imgs/UALIB_logo.png
+   :scale: 15%
+   :align: right
+   :target: https://www.lib.ua.edu
+   
+Computer-assisted Retrosynthesis Workshops
 **********************************************************
 
 | **Vincent F. Scalfani**
@@ -11,7 +17,8 @@ Computer-assisted Retrosynthesis Workshop Schedule
 .. figure:: imgs/retro_rxn.png
    :scale: 70%
    :align: center
-
+   :target: https://github.com/ualibweb/retrosynthesis/blob/main/X_Flyer/imgs/retro_rxn.png
+   
 Overview
 ============
 
