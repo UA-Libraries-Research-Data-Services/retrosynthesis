@@ -1,6 +1,6 @@
 
 .. figure:: imgs/UALIB_logo.png
-   :scale: 15%
+   :scale: 100%
    :align: right
    :target: https://www.lib.ua.edu
    
