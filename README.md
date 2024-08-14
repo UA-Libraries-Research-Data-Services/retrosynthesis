@@ -1,9 +1,5 @@
 # Retrosynthesis Workshop Materials
 
-**TODO**
-
-* [ ] Test the setup.sh script and all notebooks on Codespaces.
-
 ## About
 
 V.F. Scalfani, The University of Alabama
@@ -17,15 +13,20 @@ Fall 2024
 
 ## How to Run the Notebooks
 
-All Jupyter notebooks were developed locally on Linux Ubuntu 22.04 LTS. We think they should also work on Mac OS, but not on Windows as the multiprocessing code would be different on Windows. We recommend running the notebooks locally using Linux or Windows Subsystem for Linux. 
+All Jupyter notebooks were developed locally on Linux Ubuntu 22.04 LTS. The notebooks have only been tested on Linux. We think the code should also work on Mac OS, but not on Windows as the multiprocessing code would be different on Windows. We recommend running the notebooks locally using Linux or Windows Subsystem for Linux.
 
-Alternatively, if you have a GitHub account, [GitHub Codespaces](https://docs.github.com/en/codespaces), an online computational environment, is another option to run these retrosynthesis tutorials. Please note that you may need to adjust your [Codespaces billing](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces) settings and monitor useage to avoid unwanted charges. There are some free compute hours for each user; more resources are available for a fee.
+Alternatively, if you have a GitHub account, [GitHub Codespaces](https://docs.github.com/en/codespaces), an online computational environment, is another option to run these retrosynthesis tutorials. **Please note that you may need to adjust your [Codespaces billing](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces) settings and monitor useage to avoid unwanted charges.** There are some free compute hours for each user; more resources are available for a fee. You might also be able to run the notebooks on Google Colab, but you would need to create your own conda and development environments first.
 
-Our initial testing on Codespaces suggests that you will need to use at least a 4 core machine for the AiZynthFinder and Similarity-based retrosynthesis workshops. To run the notebooks in Codespaces:
+Our testing with GitHub Codespaces (VS Code for the Web) suggests that you will need to use at least a 4 core machine for the AiZynthFinder and Similarity-based retrosynthesis workshops. To run the notebooks in Codespaces:
 
-1. On the repository main page, click `code`, then click `codespaces` and `create codespace on main`
-2. Then, install the needed extensions: Press `Ctrl+Shift+x` or click the extensions button on the left and install the `Python` and `Jupyter` extensions made by Microsoft.
-3. [**not tested yet...**] Run the setup.sh script to setup the development environments within your Codespaces.
+1. On the repository main page, click `code > codespaces > New with options`. Select `Machine type > 4-core > Create codespace`
+2. Then, install the needed extensions, including the `Python` and `Jupyter` extensions made by Microsoft.
+3. Open a terminal in the codespace, and make the setup script executable: `chmod +x setup.sh`
+4. Run the setup script with `./setup.sh`. This will take about 15 minutes and will install system dependencies, download some datasets, create conda environments: `retro_rdkit_env`, `retro_aizynth_env`, and `retro_sim_env`, and download/build the LillyMol C++ software.
+5. Verify the conda environments were installed by running `conda info --envs`. Individual packages can be shown with `conda list --name myenv`
+6. Verify the LillyMol software works: `cd LillyMol-6-cmake/src/build/build`, then try one of the programs: `./retrosynthesis`. That should bring up a help file.
+7. Now, you should be able to run all of the notebooks, be sure to select the appropiate conda environment kernel (see notebook text).
+8. Stop the codespace. When finished working, navigate back to the repository main page, and click `code > codespaces (the specific one) > Stop codespace`. You can monitor your useage and billing in your GitHub Settings.
 
 ## Planned Workshops
 
