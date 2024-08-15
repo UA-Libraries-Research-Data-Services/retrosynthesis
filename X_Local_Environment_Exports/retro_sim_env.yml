@@ -138,6 +138,7 @@ dependencies:
       - pure-eval==0.2.3
       - pygments==2.18.0
       - pyzmq==26.1.0
+      - rdchiral==1.1.0
       - scikit-learn==1.5.1
       - scipy==1.14.0
       - stack-data==0.6.3
