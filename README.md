@@ -1,5 +1,10 @@
 # Retrosynthesis Workshop Materials
 
+**TODO**
+
+[ ] Test Similarity and LillyMol notebooks...
+[ ] Check numpy dependency for codepsace aizynth env (may need to adjust setup)
+
 ## About
 
 V.F. Scalfani, The University of Alabama
