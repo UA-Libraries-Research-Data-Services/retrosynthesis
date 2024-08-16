@@ -2,8 +2,8 @@
 
 **TODO**
 
-[ ] Test Similarity and LillyMol notebooks...
-[ ] Check numpy dependency for codepsace aizynth env (may need to adjust setup)
+- [ ] Test Similarity and LillyMol notebooks locally with new env exports
+- [ ] Test updated setup.sh script with all notebooks in codespaces
 
 ## About
 
@@ -14,7 +14,7 @@ V.F. Scalfani, The University of Alabama
 Fall 2024
 
 > [!NOTE]
-> If you find these materials useful for teaching or research, please let me know by either opening an issue or sending me a note: vfscalfani@ua.edu. This helps prioritize my efforts. Contributions and bug reports are appreciated.
+> If you find these materials useful, please let me know by either opening an issue or sending me a note: vfscalfani@ua.edu. This helps prioritize my efforts. Contributions and bug reports are appreciated.
 
 ## How to Run the Notebooks
 
@@ -22,7 +22,7 @@ All Jupyter notebooks were developed locally on Linux Ubuntu 22.04 LTS. The note
 
 Alternatively, if you have a GitHub account, [GitHub Codespaces](https://docs.github.com/en/codespaces), an online computational environment, is another option to run these retrosynthesis tutorials. **Please note that you may need to adjust your [Codespaces billing](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces) settings and monitor useage to avoid unwanted charges.** There are some free compute hours for each user; more resources are available for a fee. You might also be able to run the notebooks on Google Colab, but you would need to create your own conda and development environments first.
 
-Our testing with GitHub Codespaces (VS Code for the Web) suggests that you will need to use at least a 4 core machine for the AiZynthFinder and Similarity-based retrosynthesis workshops. To run the notebooks in Codespaces:
+Our initial testing with GitHub Codespaces (VS Code for the Web) suggests that you will need to use at least a 4 core machine for the AiZynthFinder and Similarity-based retrosynthesis workshops. To run the notebooks in Codespaces:
 
 1. On the repository main page, click `code > codespaces > New with options`. Select `Machine type > 4-core > Create codespace`
 2. Then, install the needed extensions, including the `Python` and `Jupyter` extensions made by Microsoft.
