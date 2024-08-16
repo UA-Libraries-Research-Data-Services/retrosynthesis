@@ -31,7 +31,7 @@ conda run -n retro_rdkit_env conda install -c conda-forge rdkit jupyterlab numpy
 echo $"Creating the 'retro_aizynth_env' environment and installing packages\n"
 echo $"\n\n\n"
 conda create --name retro_aizynth_env -y
-conda run -n retro_aizynth_env conda install -c conda-forge "python>=3.8,<3.10" pip=24.0 -y
+conda run -n retro_aizynth_env conda install -c conda-forge "python>=3.9,<3.11" "numpy<2.0" pip -y
 conda run -n retro_aizynth_env pip install aizynthfinder[all]
 echo $"Downloading public data for AizynthFinder\n"
 cd 04_AiZynthFinder
@@ -43,7 +43,7 @@ cd ..
 echo $"Creating the 'retro-sim-env' environment and installing packages\n"
 echo $"\n\n\n"
 conda create --name retro-sim-env -y
-conda run -n retro-sim-env conda install -c conda-forge rdkit -y
+conda run -n retro-sim-env conda install -c conda-forge rdkit pip -y
 conda run -n retro-sim-env pip install rdchiral
 git clone https://github.com/coleygroup/rdcanon.git
 cd rdcanon
