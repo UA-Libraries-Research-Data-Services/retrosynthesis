@@ -1,9 +1,5 @@
 # Retrosynthesis Workshop Materials
 
-**TODO**
-
-- [ ] Test updated setup.sh script with all notebooks in codespaces
-
 ## About
 
 V.F. Scalfani, The University of Alabama
