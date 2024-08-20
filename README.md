@@ -2,7 +2,6 @@
 
 **TODO**
 
-- [ ] Test Similarity and LillyMol notebooks locally with new env exports
 - [ ] Test updated setup.sh script with all notebooks in codespaces
 
 ## About
