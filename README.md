@@ -2,7 +2,7 @@
 
 ## About
 
-V.F. Scalfani, The University of Alabama
+**V.F. Scalfani, The University of Alabama**
 
 [in-progress materials for teaching computer-assisted retrosynthesis at The University of Alabama Libraries]
 
