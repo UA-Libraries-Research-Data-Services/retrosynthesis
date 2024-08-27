@@ -1,6 +1,6 @@
 # Reproducibility Notes
 
-All conda environments are available in this folder for reference. Each tutorial was tested locally on Ubuntu 22.04 LTS with the provided conda environments. The environments were exported as follows:
+All conda environments from Linux are available in this folder for reference. Each tutorial was tested locally on Ubuntu 22.04 LTS with the provided conda environments. The environments were exported as follows:
 
 ```
 conda env export > environment.yml
