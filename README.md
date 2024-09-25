@@ -52,7 +52,7 @@ Our initial testing with GitHub Codespaces (VS Code for the Web) suggests that y
 ## Notes
 
 > [!CAUTION]
-> Retrosynthesis Workshop and Materials Disclaimer
+> Retrosynthesis Workshop and Materials Important Considerations
 
 The intention of these retrosynthesis workshops and materials is to provide **introductory, computer-based tutorials** for learning about **published open-source computational cheminformatics techniques** used in retrosynthesis prediction. These tutorials aim to familiarize end-users with **algorithm-driven methods for predicting synthetic routes**, using cheminformatics models to explore retrosynthesis. The primary purpose is to enhance end-user understanding of cheminformatics strategies for retrosynthetic information discovery, not to provide direct, practical laboratory guidance.
 
