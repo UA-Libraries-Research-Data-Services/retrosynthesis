@@ -64,7 +64,7 @@ The intention of these retrosynthesis workshops and materials is to provide **in
 
 **Alternative Data Sources:** Although patent reaction data is widely used in cheminformatics for reaction prediction due to its availability, it is possible to use non-patent reaction data for these tutorials, such as those extracted from journal articles, to explore synthetic pathways that may not be covered by patents. However, users should still assess the applicability of any alternative sources.
 
-In summary, please respect intellectual property laws and understand that the provided examples are for educational, computer-based learning purposes. Always consult with legal experts if you plan to apply these techniques in your research, and ensure that thorough safety evaluations are conducted before attempting any laboratory procedures.
+In summary, please respect intellectual property laws and understand that the provided examples are for educational, computer-based learning purposes. Always consult with your supervisor and legal experts if you plan to apply these techniques in your research, and ensure that thorough safety evaluations are conducted before attempting any laboratory procedures.
 
 [1] What Every Chemist Should Know About Patents (4th), American Chemical Society’s Joint Board-Council Committee on Patents and Related Matters: https://www.acs.org/content/dam/acsorg/about/governance/committees/patents/what-every-chemist-knows-patents.pdf
 
