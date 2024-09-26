@@ -25,7 +25,6 @@ Overview
 UA Libraries will be hosting a workshop series on open source computer-assisted retrosynthesis workflows. These workshops will use python programming
 and cheminformatics techniques for predicting retrosynthesis. Why attend?
 
-- Enhance your chemical synthesis literature searching skills
 - Learn how to use the cheminformatics toolkit, RDKit, for working with digital molecules and reactions
 - Explore various open source retrosynthesis workflows, featuring software and methods published by researchers at **AstraZeneca**, **MIT**, and **Eli Lilly**. These workflows have been adapted from the original reported methods for our workshops.
 
