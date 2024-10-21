@@ -2,18 +2,20 @@
 
 ## About
 
+> [!NOTE]
+> 
+> Oct 21, 2024 - This repository has recently been transferred from The University of Alabama Libraries Web Services GitHub to The University of Alabama Libraries Research Data Services GitHub organization.
+> If you notice any incorrect hyperlinks within the content, please let us know.
+
 **V.F. Scalfani, The University of Alabama**
 
-[in-progress materials for teaching computer-assisted retrosynthesis at The University of Alabama Libraries]
+[Workshop materials for teaching computer-assisted retrosynthesis at The University of Alabama Libraries]
 
 Fall 2024
 
-> [!NOTE]
-> If you find these materials useful, please let me know by either opening an issue or sending me a note: vfscalfani@ua.edu. This helps prioritize my efforts. Contributions and bug reports are appreciated.
-
 ## How to Run the Notebooks
 
-All Jupyter notebooks were developed and tested locally on Linux Ubuntu 22.04 LTS. The tutorials will **not** generally work on Windows as the multiprocessing code would be different on Windows. Most of the code *seems* to works on Mac OS; we quickly tested the conda environement setups and ran the notebooks on Mac OS 14.6.1, with an M3 processor. However, we were not able to figure out how to compile LillyMol on Mac OS, so the Lillymol Retrosynthesis notebook will not work without some additional effort. In summary, we recommend running the notebooks locally using Linux or Windows Subsystem for Linux.
+All Jupyter notebooks were developed and tested (during September, 2024) locally on Linux Ubuntu 22.04 LTS. The tutorials will **not** generally work on Windows as the multiprocessing code would be different on Windows. Most of the code *seems* to works on Mac OS; we quickly tested the conda environement setups and ran the notebooks on Mac OS 14.6.1, with an M3 processor. However, we were not able to figure out how to compile LillyMol on Mac OS, so the Lillymol Retrosynthesis notebook will not work without some additional effort. In summary, we recommend running the notebooks locally using Linux or Windows Subsystem for Linux.
 
 Alternatively, if you have a GitHub account, [GitHub Codespaces](https://docs.github.com/en/codespaces), an online computational environment, is another option to run all of the retrosynthesis tutorials. **Please note that you may need to adjust your [Codespaces billing](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces) settings and monitor useage to avoid unwanted charges.** There are some free compute hours for each user; more resources are available for a fee. You might also be able to run the notebooks on Google Colab, but you would need to create your own conda and development environments first.
 
