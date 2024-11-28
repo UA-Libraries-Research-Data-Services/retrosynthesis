@@ -9,7 +9,7 @@
 
 **V.F. Scalfani, The University of Alabama**
 
-[Workshop materials for teaching computer-assisted retrosynthesis at The University of Alabama Libraries]
+Workshop materials for teaching computer-assisted retrosynthesis at The University of Alabama Libraries
 
 Fall 2024
 
