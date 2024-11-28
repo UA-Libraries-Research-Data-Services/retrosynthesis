@@ -1,21 +1,28 @@
-# Source of Data Files:
+# Source of Data Files and Reuse Notes:
 
-1. rxns_10.rsmi, rxns_10k.rsmi, rxns_100k.rsmi
+1. Schneider_JCIM_2016_56_2336_dataSetB.csv
 
-These datasets are random samples from the 1976_Sep2016_USPTOgrants_smiles.rsmi dataset: https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873
+Source: https://pubs.acs.org/doi/10.1021/acs.jcim.6b00564
+Reuse Notes: CC-BY-NC 4.0 license; https://figshare.com/collections/What_s_What_The_Nearly_Definitive_Guide_to_Reaction_Role_Assignment/3591299; https://creativecommons.org/licenses/by-nc/4.0/
 
-2. chembl12_25K.pairs.txt.gz
+2. Thesis_compounds_ESI.csv
 
-https://github.com/greglandrum/rdkit_blog/blob/master/data/chembl16_25K.pairs.txt.gz
+Source: https://doi.org/10.1039/C6SC00264A 
+Reuse Notes: According to the article, the supplementary thesis pilot data is released to public domain as CC0; https://creativecommons.org/publicdomain/zero/1.0/
 
-3. zinc.leads.500.q.smi
+3. chembl16_25K.pairs.txt.gz and zinc.leads.500.q.smi
 
-https://github.com/greglandrum/rdkit_blog/blob/master/data/zinc.leads.500.q.smi
+Source: https://github.com/greglandrum/rdkit_blog/blob/master/data/chembl16_25K.pairs.txt.gz; https://github.com/greglandrum/rdkit_blog/blob/master/data/zinc.leads.500.q.smi
+Reuse Notes: These files were originally posted on the RDKit Blog and appear to be manually compiled subsets of ChEMBL and ZINC Database data: http://rdkit.blogspot.com/2013/11/fingerprint-based-substructure.html.
 
-4. Schneider_JCIM_2016_56_2336_dataSetB.csv
+ChEMBL data is licensed as CC-BY-SA 3.0: https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/general-questions; https://creativecommons.org/licenses/by-sa/3.0/; See here for information about reuse of ZINC data: https://wiki.docking.org/index.php/Terms_And_Conditions
 
-https://pubs.acs.org/doi/10.1021/acs.jcim.6b00564
+4. rxns_10.rsmi, rxns_10k.rsmi, rxns_100k.zip
 
-5. Thesis_compounds_ESI.csv
+Source: These datasets are random samples from the 1976_Sep2016_USPTOgrants_smiles.rsmi dataset: https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873
+Reuse Notes: The dataset was released to public domain as CC0; https://creativecommons.org/publicdomain/zero/1.0/
 
-https://doi.org/10.1039/C6SC00264A 
+5. test_smiles.smi
+
+Source: Manually compiled molecule test set from PubChem
+Reuse Notes: See the NCBI Website and Data Usage Policies: https://www.ncbi.nlm.nih.gov/home/about/policies/
