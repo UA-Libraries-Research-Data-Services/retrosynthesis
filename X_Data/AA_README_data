@@ -3,7 +3,8 @@
 1. Schneider_JCIM_2016_56_2336_dataSetB.csv
 
 Source: This reaction dataset is from: https://pubs.acs.org/doi/10.1021/acs.jcim.6b00564
-Reuse Notes: CC-BY-NC 4.0 license; https://figshare.com/collections/What_s_What_The_Nearly_Definitive_Guide_to_Reaction_Role_Assignment/3591299; https://creativecommons.org/licenses/by-nc/4.0/
+Reuse Notes: CC-BY-NC 4.0 license; https://figshare.com/collections/What_s_What_The_Nearly_Definitive_Guide_to_Reaction_Role_Assignment/3591299;
+https://creativecommons.org/licenses/by-nc/4.0/
 
 2. Thesis_compounds_ESI.csv
 
@@ -12,17 +13,36 @@ Reuse Notes: According to the article, the supplementary thesis pilot data is re
 
 3. chembl16_25K.pairs.txt.gz and zinc.leads.500.q.smi
 
-Source: https://github.com/greglandrum/rdkit_blog/blob/master/data/chembl16_25K.pairs.txt.gz; https://github.com/greglandrum/rdkit_blog/blob/master/data/zinc.leads.500.q.smi
-Reuse Notes: These files were originally posted on the RDKit Blog and appear to be manually compiled subsets of ChEMBL and ZINC Database data: http://rdkit.blogspot.com/2013/11/fingerprint-based-substructure.html.
+Source: https://github.com/greglandrum/rdkit_blog/blob/master/data/chembl16_25K.pairs.txt.gz;
+https://github.com/greglandrum/rdkit_blog/blob/master/data/zinc.leads.500.q.smi
+Reuse Notes: These files were originally posted on the RDKit Blog and appear to be manually compiled subsets of ChEMBL and ZINC Database data: 
+http://rdkit.blogspot.com/2013/11/fingerprint-based-substructure.html.
 
-ChEMBL data is licensed as CC-BY-SA 3.0: https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/general-questions; https://creativecommons.org/licenses/by-sa/3.0/; See here for information about reuse of ZINC data: https://wiki.docking.org/index.php/Terms_And_Conditions
+ChEMBL data is licensed as CC-BY-SA 3.0: https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/general-questions;
+https://creativecommons.org/licenses/by-sa/3.0/; See here for information about reuse of ZINC data: https://wiki.docking.org/index.php/Terms_And_Conditions
 
 4. rxns_10.rsmi, rxns_10k.rsmi, rxns_100k.zip
 
-Source: These datasets are random samples from the 1976_Sep2016_USPTOgrants_smiles.rsmi dataset: https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873
+Source: These datasets are random samples from the 1976_Sep2016_USPTOgrants_smiles.rsmi dataset:
+https://figshare.com/articles/dataset/Chemical_reactions_from_US_patents_1976-Sep2016_/5104873
 Reuse Notes: The dataset was released to public domain as CC0; https://creativecommons.org/publicdomain/zero/1.0/
 
 5. test_smiles.smi
 
 Source: Manually compiled molecule test set from PubChem
 Reuse Notes: See the NCBI Website and Data Usage Policies: https://www.ncbi.nlm.nih.gov/home/about/policies/
+
+6. The data and models used for the AiZynthFinder tutorial are not included in this repository.
+You will need to download them separately using the AiZynthFinder functions (see tutorial).
+Please refer to the AiZynthFinder documentation for more information on reuse: https://github.com/MolecularAI/aizynthfinder.
+The data and models are available on Figshare and Zenodo. See the AiZynthFinder script for the specific download links; follow those links for reuse details:
+https://github.com/MolecularAI/aizynthfinder/blob/master/aizynthfinder/tools/download_public_data.py
+
+The AiZynthFinder data/models appear to be either CC-BY 4.0 or MIT licensed:
+
+https://zenodo.org/records/7797465
+https://zenodo.org/records/7341155
+
+https://doi.org/10.6084/m9.figshare.12334577.v1
+https://doi.org/10.6084/m9.figshare.13280507.v1
+
