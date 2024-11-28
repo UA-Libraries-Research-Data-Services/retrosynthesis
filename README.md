@@ -58,7 +58,7 @@ Our initial testing with GitHub Codespaces (VS Code for the Web) suggests that y
 
 The intention of these retrosynthesis workshops and materials is to provide **introductory, computer-based tutorials** for learning about **published open-source computational cheminformatics techniques** used in retrosynthesis prediction. These tutorials aim to familiarize learners with **algorithm-driven methods for predicting synthetic routes**, using cheminformatics models to explore retrosynthesis. The primary purpose is to enhance learner understanding of cheminformatics strategies for retrosynthetic predictions, not to provide direct, practical laboratory guidance.
 
-**Training Data:** The retrosynthetic prediction techniques in the tutorials use publicly available reaction data (and/or computer models derived from this data) from U.S. patents for training purposes.
+**Training Data:** The retrosynthetic prediction techniques in the tutorials use reaction data (and/or computer models derived from this data) from U.S. patents for training purposes. See the [data README](https://github.com/UA-Libraries-Research-Data-Services/retrosynthesis/blob/main/X_Data/AA_README_data) and references in the tutorials for more information.
 
 **Intellectual Property:** Due to the use of patent reaction data, it may be possible that predicted reaction pathways can match or be similar to those reported in patents. Patents are a form of intellectual property, and specific synthetic pathways and compounds may be protected by law [1,2].
 
