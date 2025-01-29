@@ -9,7 +9,7 @@
 
 **V.F. Scalfani, The University of Alabama**
 
-Workshop materials for teaching computer-assisted retrosynthesis at The University of Alabama Libraries
+Workshop materials for teaching computer-assisted retrosynthesis at The University of Alabama Libraries. This workshop code is licensed under the MIT License. However, these scripts may depend on external software and libraries, which must be installed separately and are subject to their own licenses. Please refer to their respective documentation for installation instructions and licensing details.
 
 Fall 2024
 
