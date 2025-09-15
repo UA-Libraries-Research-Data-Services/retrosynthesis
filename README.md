@@ -15,7 +15,11 @@ Fall 2024
 
 ## How to Run the Notebooks
 
-All Jupyter notebooks were developed and tested (during September, 2024) locally on Linux Ubuntu 22.04 LTS. The tutorials will **not** generally work on Windows as the multiprocessing code would be different on Windows. Most of the code *seems* to works on Mac OS; we quickly tested the conda environement setups and ran the notebooks on Mac OS 14.6.1, with an M3 processor. However, we were not able to figure out how to compile LillyMol on Mac OS, so the Lillymol Retrosynthesis notebook will not work without some additional effort. In summary, we recommend running the notebooks locally using Linux or Windows Subsystem for Linux.
+All code was developed and tested locally on Linux Ubuntu 22.04 LTS. Development environments were set up manually with conda-forge Miniforge (See notebooks). The code was originally developed and tested during September 2024, however, when updates were made in July/September 2025, a new local conda-forge environment was setup (as shown in notebook tutorials) and only updated notebooks were tested. We did not use the original exported conda-forge environment settings when updates were made, so these files are no longer accurate and have been removed.
+
+The tutorials will **not** generally work on Windows as the multiprocessing code would be different on Windows. The code is **not** fully tested on Mac OS (e.g., we have only compiled LillyMol on Linux). In summary, we recommend running the notebooks locally using Linux or Windows Subsystem for Linux.
+
+**Note: the included `setup.sh` script was designed for GitHub Codespaces (see below), and was **not** tested nor used locally**
 
 Alternatively, if you have a GitHub account, [GitHub Codespaces](https://docs.github.com/en/codespaces), an online computational environment, is another option to run all of the retrosynthesis tutorials. **See the [GitHub Codespaces Terms](https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features#codespaces) and please note that you may need to adjust your [Codespaces billing](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces) settings and monitor useage to avoid unwanted charges.** There are some free compute hours for each user; more resources are available for a fee. You might also be able to run the notebooks on Google Colab, but you would need to create your own conda and development environments first.
 

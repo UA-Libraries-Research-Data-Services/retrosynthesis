@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# September 2025 - changed rdcanon install to use pip
+
 # Update and install dependencies
 echo $"Updating and installing dependencies\n"
 echo $"\n\n\n"
@@ -44,10 +46,7 @@ echo $"Creating the 'retro-sim-env' environment and installing packages\n"
 echo $"\n\n\n"
 conda create --name retro-sim-env -y
 conda run -n retro-sim-env conda install -c conda-forge rdkit pip -y
-conda run -n retro-sim-env pip install rdchiral
-git clone https://github.com/coleygroup/rdcanon.git
-cd rdcanon
-conda run -n retro-sim-env pip install -e .
+conda run -n retro-sim-env pip install rdchiral rdcanon
 cd ..
 
 # Clone and build the LillyMol project
