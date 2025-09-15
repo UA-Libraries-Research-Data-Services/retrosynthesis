@@ -15,7 +15,9 @@ Fall 2024
 
 ## How to Run the Notebooks
 
-All code was developed and tested (during September, 2024) locally on Linux Ubuntu 22.04 LTS. The tutorials will **not** generally work on Windows as the multiprocessing code would be different on Windows. The code is **not** fully tested on Mac OS (e.g., we have only compiled LillyMol on Linux). In summary, we recommend running the notebooks locally using Linux or Windows Subsystem for Linux.
+All code was developed and tested (during September, 2024) locally on Linux Ubuntu 22.04 LTS. Development environments were set up manually (See notebooks). The tutorials will **not** generally work on Windows as the multiprocessing code would be different on Windows. The code is **not** fully tested on Mac OS (e.g., we have only compiled LillyMol on Linux). In summary, we recommend running the notebooks locally using Linux or Windows Subsystem for Linux.
+
+**Note: the included `setup.sh` script was designed for GitHub Codespaces (see below), and was **not** tested nor used locally**
 
 Alternatively, if you have a GitHub account, [GitHub Codespaces](https://docs.github.com/en/codespaces), an online computational environment, is another option to run all of the retrosynthesis tutorials. **See the [GitHub Codespaces Terms](https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features#codespaces) and please note that you may need to adjust your [Codespaces billing](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces) settings and monitor useage to avoid unwanted charges.** There are some free compute hours for each user; more resources are available for a fee. You might also be able to run the notebooks on Google Colab, but you would need to create your own conda and development environments first.
 
