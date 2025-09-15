@@ -17,24 +17,7 @@ Fall 2024
 
 All code was developed and tested locally on Linux Ubuntu 22.04 LTS. Development environments were set up manually with conda-forge Miniforge (See notebooks). The code was originally developed and tested during September 2024, however, when updates were made in July/September 2025, a new local conda-forge environment was setup (as shown in notebook tutorials) and only updated notebooks were tested. We did not use the original exported conda-forge environment settings when updates were made, so these files are no longer accurate and have been removed.
 
-The tutorials will **not** generally work on Windows as the multiprocessing code would be different on Windows. The code is **not** fully tested on Mac OS (e.g., we have only compiled LillyMol on Linux). In summary, we recommend running the notebooks locally using Linux or Windows Subsystem for Linux.
-
-**Note: the included `setup.sh` script was designed for GitHub Codespaces (see below), and was **not** tested nor used locally**
-
-Alternatively, if you have a GitHub account, [GitHub Codespaces](https://docs.github.com/en/codespaces), an online computational environment, is another option to run all of the retrosynthesis tutorials. **See the [GitHub Codespaces Terms](https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features#codespaces) and please note that you may need to adjust your [Codespaces billing](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces) settings and monitor useage to avoid unwanted charges.** There are some free compute hours for each user; more resources are available for a fee. You might also be able to run the notebooks on Google Colab, but you would need to create your own conda and development environments first.
-
-We have included a setup script to help create programming environments for these workshop tutorials in Codespaces. The script installs various software packages using `conda-forge` and `apt-get`, unzips and downloads datasets, and clones two external repositories: one for a Python development installation and another to build its software. Before using the script, we recommend reviewing it, consulting the documentation and licenses of the respective software, and referring to the tutorial notebooks and READMEs in this repository for additional details about the software packages, datasets, and environment setup.
-
-Our initial testing with GitHub Codespaces (VS Code for the Web) suggests that you will need to use at least a 4 core machine for the AiZynthFinder and Similarity-based retrosynthesis workshops. To run the notebooks in Codespaces:
-
-1. On the repository main page, click `code > codespaces > New with options`. Select `Machine type > 4-core > Create codespace`
-2. Then, install the needed extensions, including the `Python` and `Jupyter` extensions made by Microsoft.
-3. Open a terminal in the codespace, and make the setup script executable: `chmod +x setup.sh`
-4. Run the setup script with `./setup.sh`. This will take about 15 minutes and will install system dependencies, download some datasets, create conda environments: `retro_rdkit_env`, `retro_aizynth_env`, and `retro_sim_env`, and download/build the LillyMol C++ software.
-5. Verify the conda environments were installed by running `conda info --envs`. Individual packages can be shown with `conda list --name myenv`
-6. Verify the LillyMol software works: `cd LillyMol-6-cmake/src/build/build`, then try one of the programs: `./retrosynthesis`. That should bring up a help file.
-7. Now, you should be able to run all of the notebooks, be sure to select the appropiate conda environment kernel (see notebook text).
-8. Stop the codespace. When finished working, navigate back to the repository main page, and click `code > codespaces (the specific one) > Stop codespace`. You can monitor your useage and billing in your GitHub Settings.
+The tutorials will **not** generally work on Windows as the multiprocessing code would be different on Windows. The code is **not** fully tested on Mac OS (e.g., we have only compiled LillyMol on Linux). In 2024, we had a setup script useful for running the notebooks on GitHub Codespaces, but this no longer works and so has been removed. In summary, we recommend running the notebooks locally using Linux or Windows Subsystem for Linux. In future workshops at The University of Alabama, we will explore and test options for cloud/server computing setup.
 
 ## Planned Workshops
 
