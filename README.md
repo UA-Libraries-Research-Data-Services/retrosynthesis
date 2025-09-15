@@ -15,7 +15,9 @@ Fall 2024
 
 ## How to Run the Notebooks
 
-All code was developed and tested (during September, 2024) locally on Linux Ubuntu 22.04 LTS. Development environments were set up manually (See notebooks). The tutorials will **not** generally work on Windows as the multiprocessing code would be different on Windows. The code is **not** fully tested on Mac OS (e.g., we have only compiled LillyMol on Linux). In summary, we recommend running the notebooks locally using Linux or Windows Subsystem for Linux.
+All code was developed and tested locally on Linux Ubuntu 22.04 LTS. Development environments were set up manually with conda-forge Miniforge (See notebooks). The code was originally developed and tested during September 2024, however, when updates were made in July/September 2025, a new local conda-forge environment was setup (as shown in notebook tutorials) and only updated notebooks were tested. We did not use the original exported conda-forge environment settings when updates were made, so these files are no longer accurate and have been removed.
+
+The tutorials will **not** generally work on Windows as the multiprocessing code would be different on Windows. The code is **not** fully tested on Mac OS (e.g., we have only compiled LillyMol on Linux). In summary, we recommend running the notebooks locally using Linux or Windows Subsystem for Linux.
 
 **Note: the included `setup.sh` script was designed for GitHub Codespaces (see below), and was **not** tested nor used locally**
 
